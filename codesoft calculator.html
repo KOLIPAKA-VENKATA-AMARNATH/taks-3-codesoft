@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>	
+input{
+	width:70px;
+	height:60px;
+	font-size:25px;
+	margin:10px;
+   
+
+}
+.t1{
+    width:97%;
+    text-align:right;
+    color:rgb(255, 255, 255) ;
+    background:rgb(44, 42, 42)
+}	
+table{
+    border:2px solid;
+  
+    
+}
+body {
+   background-color:rgb(180, 221, 247)  
+}
+</style>
+<title> Calculator</title>
+</head>
+<body>
+    <br>
+    <br>
+<p align="center"><font size="9" style="color:rgb(15, 15, 17);"><b>Calculator</b></font></p>
+<br>
+<form>
+<table align="center" >
+<tr>
+<td>
+<input type="text" name="Input" class="t1" placeholder="//Do Calculation//">
+</td>
+</tr>
+<tr>
+<td>
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="1" OnClick="Input.value += '1'">
+<input style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="2" OnCLick="Input.value += '2'">
+<input style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="3" OnCLick="Input.value += '3'">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="/" OnClick="Input.value += '/'">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="Del" OnClick="Input.value = Input.value.slice(0,Input.value.length-1)">
+<br>
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="4" OnClick="Input.value += '4'">
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="5" OnCLick="Input.value += '5'">
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="6" OnClick="Input.value += '6'">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="-" OnClick="Input.value += '-'">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="x^2" OnClick="Input.value **= 2">
+<br>
+<input style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="7" OnClick="Input.value += '7'">
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);" type="button" value="8" OnCLick="Input.value += '8'">
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42); "type="button" value="9" OnClick="Input.value += '9'">
+<input style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="x" OnClick="Input.value += '*'">
+<input style="color:aquamarine ;background:rgb(44, 42, 42);" type="button"  value="Sqrt" OnClick="Input.value = Math.sqrt(Input.value)">
+<br>
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="Clear" OnClick="Input.value = ''">
+<input  style="color:rgb(223, 216, 216) ;background:rgb(44, 42, 42);"type="button" value="0" OnClick="Input.value += '0'">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="=" OnClick="Input.value = eval(Input.value)">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button"  value="+" OnCLick="Input.value += '+'">
+<input  style="color:aquamarine ;background:rgb(44, 42, 42);" type="button" value="." OnClick="Input.value += '.'" >
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
